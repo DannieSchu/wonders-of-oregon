@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <header>
+        <h1>Five Wonders of Oregon</h1>
+    </header>
+    <main>
+        <h2>Design your journey into wilderness</h2>
+        <form id="user-profile">
+            <p class="text-prompt">
+                <label for="name">Your name:  </label>
+                    <input id="name" name="name" required>
+            </p>
+            <fieldset class='experience-levels'>
+                <legend>Your experience level</legend>
+                <p id="experience-levels">
+                    <label>
+                        <input type="radio" name ="experience" value="newbie">
+                        <img src="assets/...">
+                        Hiking Newbie
+                    </label>
+                    <label>
+                        <input type="radio" name ="experience" value="moderate-experience">
+                        <img src="assets/...">
+                        Moderate Experience
+                    </label>
+                    <label>
+                        <input type="radio" name ="experience" value="very-experienced">
+                        <img src="assets/...">
+                        Very Experienced
+                    </label>
+                </p>
+            </fieldset>
+            <button>Start Hiking!</button>
+        </form>
+    </main>
+        <script type="module" src="./profile/profile.js"></script>
+</body>
+
+</html>
