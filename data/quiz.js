@@ -1,5 +1,5 @@
 const trailOfTenFalls = {
-    id: 'trail-of-ten-falls',
+    id: 'ten-falls',
     name: 'Trail of Ten Falls',
     // location: 'Silver Falls State Park', 
     map: {
@@ -10,22 +10,22 @@ const trailOfTenFalls = {
     description: 'An amazing visual and auditory experience replete with ten gorgeous waterfalls that are particularly stunning in spring. This long but mostly flat hike is popular yearround. What time do you arrive?',
     choices: [{
         id: 'early',
-        description: '6 a.m.',
-        result: `You wake up excrusciatingly early to reach the park before the crowds descend. Your sleepiness subsides when you see the sunrise at your first waterfall. Treat yourself to lunch in Silverton. You get get 20 strength and 20 endurance points. You lose 10 energy points.`,
+        result: '6 a.m.',
+        description: `You wake up excrusciatingly early to reach the park before the crowds descend. Your sleepiness subsides when you see the sunrise at your first waterfall. Treat yourself to lunch in Silverton. You get get 20 strength and 20 endurance points. You lose 10 energy points.`,
         strength: 20,
         // endurance: 20,
         energy: -10, 
     }, {
         id: 'timely',
-        description: '10 a.m.',
-        result: `You and the rest of the metro area arrive in late morning. You inadvertently photobomb three family photo shoots and experience the falls to the tunes of a college student's portable boombox. You find a shortcut out of the park after an irritating 2 miles. You take major hits to energy and endurance.`,
+        result: '10 a.m.',
+        description: `You and the rest of the metro area arrive in late morning. You inadvertently photobomb three family photo shoots and experience the falls to the tunes of a college student's portable boombox. You find a shortcut out of the park after an irritating 2 miles. You take major hits to energy and endurance.`,
         strength: 5,
         // endurance: -20,
         energy: -30,
     }, {
         id: 'late',
-        description: '5 p.m.',
-        result: `The park is clearing out when you pull in so you have no trouble nabbing a parking spot. Unfortunately, you are not the only latecommer, and you find yourself stuck with a squabbling group of backpackers taking a break from the PCT. You gain 20 strength points, but your energy reserves take a hit.`,
+        result: '5 p.m.',
+        description: `The park is clearing out when you pull in so you have no trouble nabbing a parking spot. Unfortunately, you are not the only latecommer, and you find yourself stuck with a squabbling group of backpackers taking a break from the PCT. You gain 20 strength points, but your energy reserves take a hit.`,
         strength: 20,
         // endurance: 0,
         energy: -20,

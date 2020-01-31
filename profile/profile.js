@@ -1,5 +1,4 @@
 // Get user profile form
-
 const userProfileForm = document.getElementById('user-profile');
 
 
@@ -9,18 +8,35 @@ userProfileForm.addEventListener('submit', (e) => {
     e.preventDefault();
     // Make a new form data object
     const formData = new FormData(userProfileForm);
-    // Make a user with the form data object
-    const user = makeUser(formData);
+    // Create a user with the form data object
+    const createUser = () => {
+        const user = {
+            name: formData.get('name'),
+            experience: formData.get('experience'),
+            strength: {},
+            energy: 100,
+            completed: {},
+        };
+
+        if (user.experience.value === 'no-experience') {
+            user.strength = 0;
+        }
+        if (user.experience.value === 'moderate-experience') {
+            user.strength = 10;
+        }
+        if (user.experience.value === 'very-experienced') {
+            user.strength = 20;
+        }
+        console.log(user.experience.value);
+
+        return user;
+    };
+    const userProfile = createUser(formData);
 
     // Put the form data object into local storage
-    saveUser(user);
+    localStorage.setItem('user', JSON.stringify(userProfile));
 
     // Redirect user to map page
-    window.location = './map/map.html';
+    window.location = '../map/index.html';
 
 });
-
-
-const makeUser = (someFormData) => {
-    
-}
