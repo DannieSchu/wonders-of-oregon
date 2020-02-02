@@ -4,7 +4,7 @@ export default function createUser(formData) {
         experience: formData.get('boots-icon'),
         strength: {},
         energy: 100,
-        completed: {},
+        hiked: {},
     };
 
     return user;

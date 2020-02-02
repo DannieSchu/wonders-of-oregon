@@ -4,7 +4,7 @@ export default function loadProfile() {
     const bootsIcon = document.getElementById('boots-icon');
     const strengthSpan = document.getElementById('strength');
     const energySpan = document.getElementById('energy');
-    const completedTrailsSpan = document.getElementById('completed');
+    const completedTrailsSpan = document.getElementById('hiked');
 
     // initialize user using form data
     const json = localStorage.getItem('user');
@@ -28,5 +28,5 @@ export default function loadProfile() {
     bootsIcon.src = `../assets/boot-icons/${user.experience}.png`;
     strengthSpan.textContent = user.strength;
     energySpan.textContent = user.energy;
-    completedTrailsSpan.textContent = user.completed;
+    completedTrailsSpan.textContent = user.hiked;
 }

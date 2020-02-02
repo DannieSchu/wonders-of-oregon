@@ -15,7 +15,7 @@ test('time to test a function', function(assert) {
         experience: 'moderate-experience',
         strength: {},
         energy: 100,
-        completed: {},
+        hiked: {},
     };
 
     //Act 

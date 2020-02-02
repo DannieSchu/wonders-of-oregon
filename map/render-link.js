@@ -1,4 +1,9 @@
-export default function renderTrailLink(trail) {    
+// import trailsArray from "../data/trailsAPI";
+
+export default function renderTrailLink(trailsArray) {    
+    // get user from local storage
+    const user = JSON.parse(localStorage.getItem('user'));
+    
     // create links in the DOM
     const trailLink = document.createElement('a');
 
@@ -7,15 +12,22 @@ export default function renderTrailLink(trail) {
 
     // add textContent to element
     trailLink.textContent = trailLink.name;
-
-    // add href using query params
-    const searchParams = new URLSearchParams();
-    searchParams.set('id', trail.id);
-    trailLink.href = 'trail?' + searchParams.toString();
-
-    // set location of link to location in object
-    trailLink.style.top = trail.map.top;
-    trailLink.style.left = trail.map.left;
+    
+    // for each item in the trails array
+    trailsArray.forEach(trail => {
+        // if user has completed hike
+        if (user.hiked[trail.id]) {
+            trailLink.style.textDecoration = 'line-through';
+        } else {
+        // add href using query params
+            const searchParams = new URLSearchParams();
+            searchParams.set('id', trail.id);
+            trailLink.href = 'trail?' + searchParams.toString();
+        }
+        // set location of link to location in object
+        trailLink.style.top = trail.map.top;
+        trailLink.style.left = trail.map.left;
+    });
 
     return trailLink;
     

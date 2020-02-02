@@ -1,42 +1,44 @@
-import renderTrailLink from './render-link.js';
-import findById from '../common/find-by-id.js';
+// import renderTrailLink from './render-link.js';
+// import findById from '../common/find-by-id.js';
 import loadProfile from '../common/load-profile.js';
+import trailsArray from '../data/trailsAPI.js';
 
 loadProfile();
 
-// check local storage to see what questions have been completed
-const trailsArray = localStorage.getItem(JSON.parse('trails'));
+// get nav element from DOM
+const trailsNav = document.getElementById('trails-nav');
 
-const possiblyCompletedTrail = findById(trailsArray, selectedTrail.id);
-
-let remainingTrail;
-
-// if there are no questions left to answer
-if (remainingTrail === 0) {
-    // redirect to the results page
-    window.location('../results/index.html');
-// otherwise, loop through each trail in the array and render 
-} else {
+function renderTrailLink() {    
+    // get user from local storage
+    const user = JSON.parse(localStorage.getItem('user'));
+    
+    // for each item in the trails array
     trailsArray.forEach(trail => {
-        renderTrailLink(trail);
+        // create links in the DOM
+        const trailLink = document.createElement('a');
+    
+        // add classList of 'trail'
+        trailLink.classList.add = 'trail';
+
+        // add textContent to element
+        trailLink.textContent = trail.name;
+
+        // if user has completed hike
+        if (user.hiked[trail.id]) {
+            trailLink.style.textDecoration = 'line-through';
+        } else {
+            // add href using query params
+            const searchParams = new URLSearchParams();
+            searchParams.set('id', trail.id);
+            trailLink.href = 'trail?' + searchParams.toString();
+
+            // set location of link to location in object
+            trailLink.style.top = trail.map.top;
+            trailLink.style.left = trail.map.left;
+        }
+        // append link to nav element
+        trailsNav.appendChild(trailLink);
     });
 }
 
-while (possiblyCompletedTrail) {
- // change position? strikethrough?
-}
-
-// if there are any questions left to answer
-    // render a list of remaining questions based on the metadata
-        // get the ul from the DOM
-        // get questions from metadata
-        // loop through questions
-            // get a question from the array
-            // make an li for the question
-                // create li
-                // make an <a> for li
-                // unles the question is already completed (check local storage). If so, make a span.
-                // add textContent and and href to the a tag (using query params)
-                    //e.g. href="./detail?id=snake"
-            // append the a tag to the li
-            // append the question li to the ul
+renderTrailLink(trailsArray);
