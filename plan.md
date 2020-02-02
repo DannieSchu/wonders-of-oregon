@@ -18,10 +18,10 @@ Links to hike pages scattered around
 (id => query parameter)
 
 
-## Hike page
+## Trail page
 1. Read query parameter
 2. Load item on page
-   1. Description of hike and skill/endurance/energy required
+   1. Description of trail and skill/endurance/energy required
    2. Image
    3. Audio/video?
 3. Create question prompts and inputs with form

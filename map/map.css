@@ -1,0 +1,17 @@
+body.map {
+    background: url('../assets/oregon-map.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile-header h2 {
+    font-size: 40px;
+}

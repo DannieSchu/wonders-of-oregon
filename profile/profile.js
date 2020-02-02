@@ -1,7 +1,7 @@
+import createUser from './create-user.js';
+
 // Get user profile form
-
 const userProfileForm = document.getElementById('user-profile');
-
 
 // When the user submits form
 userProfileForm.addEventListener('submit', (e) => {
@@ -9,18 +9,13 @@ userProfileForm.addEventListener('submit', (e) => {
     e.preventDefault();
     // Make a new form data object
     const formData = new FormData(userProfileForm);
-    // Make a user with the form data object
-    const user = makeUser(formData);
+
+    // Create a user with the form data object
+    const userProfile = createUser(formData);
 
     // Put the form data object into local storage
-    saveUser(user);
+    localStorage.setItem('user', JSON.stringify(userProfile));
 
     // Redirect user to map page
-    window.location = './map/map.html';
-
+    window.location = '../map/index.html';
 });
-
-
-const makeUser = (someFormData) => {
-    
-}
