@@ -1,0 +1,24 @@
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#boots-icon {
+    margin: 40px;
+}
+
+#name {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 20px;
+}

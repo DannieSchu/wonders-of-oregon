@@ -8,6 +8,11 @@ loadProfile();
 // get nav element from DOM
 const trailsNav = document.getElementById('trails-nav');
 
+
+// if user is depleted or hikes all the trails...
+// send to results page
+
+
 function renderTrailLink() {    
     // get user from local storage
     const user = JSON.parse(localStorage.getItem('user'));

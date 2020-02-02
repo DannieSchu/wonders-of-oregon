@@ -11,10 +11,11 @@ export default function loadProfile() {
 
     // if there's no user, return to homepage
     if (!json) {
-        window.location('../profile/index.html');
+        window.location('../home/index.html');
     }
     const user = JSON.parse(json);
 
+    // set user's strength level according to their experience
     if (user.experience === 'no-experience') {
         user.strength = 0;
     } else if (user.experience === 'moderate-experience') {
@@ -22,6 +23,7 @@ export default function loadProfile() {
     } else if (user.experience === 'very-experienced') {
         user.strength = 20;
     }
+    console.log(user);
     
     // set dom properties using form data
     nameSpan.textContent = user.name;

@@ -18,9 +18,15 @@ header {
     top: 40px; */
 }
 
+h2 {
+    font-family: 'Sedgwick Ave', cursive;
+    color: white;
+
+}
+
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 main {
@@ -29,18 +35,6 @@ main {
     align-items: center;
     justify-content: space-between;
     margin: 100px 100px auto 275px;
-}
-
-h2 {
-    color: white;
-    font-family: 'Sedgwick Ave', cursive;
-    letter-spacing: .03em;
-}
-
-h2.homepage {
-    font-size: 30px;
-    line-height: 1.5em;
-    width: 250px;
 }
 
 label {
@@ -65,32 +59,4 @@ button {
 
 button:hover {
     opacity: 0.5;
-}
-
-.profile-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
-
-.profile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#boots-icon {
-    margin: 40px;
-}
-
-.profile-spans {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: space-around;
-    margin: 0;
 }

@@ -1,4 +1,4 @@
-import createUser from '../profile/create-user.js';
+import createUser from '../home/create-user.js';
 
 const test = QUnit.test;
 

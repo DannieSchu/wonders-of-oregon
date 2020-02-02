@@ -4,8 +4,6 @@ body.map {
     background-size: cover;
 }
 
-
-
 .profile-header {
     display: flex;
     flex-direction: row;

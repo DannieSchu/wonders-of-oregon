@@ -17,3 +17,9 @@ form {
 input[type="radio"] {
     display: none;
 }
+
+h2.homepage {
+    font-size: 30px;
+    line-height: 1.5em;
+    width: 250px;
+}
