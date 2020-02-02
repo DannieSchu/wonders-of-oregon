@@ -7,17 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Sedgwick+Ave&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../common/style.css">
+    <link rel="stylesheet" href="../common/profile-header.css">
     <link rel="stylesheet" href="trail.css">
-    <title>Make a Choice</title>
+    <title>Trail</title>
 </head>
  
-<body>
-    <form>
-        <label>
-            <span>Option 1</span>
-            <input type="radio" name="" value="">
-        </label>
+<body class="trail">
+    <header class="profile-header">
+        <h2>Trail Description</h2>
+        <div class="profile">
+            <img id="boots-icon">
+            <div class="profile-spans">
+                <span id="name"></span><br>
+                <span>Strength: <span id="strength" \></span><br>
+                <span>Energy: <span id="energy" \></span><br>
+                <span>Trails hiked: <span id="hiked" \></span>
+            </div>
+        </div>
+    </header>
+    <form id="trail-quiz">
+        <div id="trail-overview">
+            <h2 id="trail-name"></h2>
+            <img id="trail-image" src="">
+            <p id="trail-description"></p>
+            <h3 id="quiz-question"></h3>
+        </div>
+        <div id="option-form" class="">
+            <div id="options">
+                <!-- <label>
+                    <input type="radio" name="" value="">
+                    <span id="option-one"></span>
+                </label>
+                <label>
+                    <input type="radio" name="" value="">
+                    <span id="option-two"></span>
+                </label>
+                <label>
+                    <input type="radio" name="" value="">
+                    <span id="option-three"></span>
+                </label> -->
+            </div>
+        </div>
+        <button id="quiz-button">Submit</button>
     </form>
+    <section id="result-section" class="hidden">
+        <h3 id="user-choice"></h3>
+        <p id="outcome"></p>
+        <button id="return-button" class="hidden">Return</button>
+    </section>
     <script type="module" src="./app.js"></script>
 </body>
 

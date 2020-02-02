@@ -7,8 +7,9 @@ const trailOfTenFalls = {
         left: '40%',
     },
     image: 'trail-of-ten-falls.jpg',
-    description: 'An amazing visual and auditory experience replete with ten gorgeous waterfalls that are particularly stunning in spring. This long but mostly flat hike is popular yearround. What time do you arrive?',
-    choices: [{
+    description: 'An amazing visual and auditory experience replete with ten gorgeous waterfalls that are particularly stunning in spring. This long but mostly flat hike is popular yearround.',
+    question: 'What time do you arrive?',
+    options: [{
         id: 'early',
         option: '6 a.m.',
         outcome: `You wake up excrusciatingly early to reach the park before the crowds descend. Your sleepiness subsides when you see the sunrise at your first waterfall. Treat yourself to lunch in Silverton. You get get 20 strength and 20 endurance points. You lose 10 energy points.`,
@@ -42,8 +43,9 @@ const elkToKingsMountain = {
         left: '20%',
     },
     image: 'elk-to-kings-mountain.jpg',
-    description: 'This demanding loop will take you to the summit of Elk and King\'s Mountains through the lush and slippery Tillamook forest. You\'ll gain nearly 4000 feet in the first two miles. How do you prepare?',
-    choices: [{
+    description: 'This demanding loop will take you to the summit of Elk and King\'s Mountains through the lush and slippery Tillamook forest. You\'ll gain nearly 4000 feet in the first two miles.',
+    question: 'How do you prepare?',
+    options: [{
         id: 'extra-preparation',
         option: 'Practice hikes',
         outcome: 'Because you built up your strength and endurance in advance, you are able to take this challening hike in stride. The pain is still very real, but you are able to enjoy the beautiful views. You get 50 strength points and lose only 20 energy.',
@@ -76,8 +78,9 @@ const someOtherTrail = {
         left: '80%',
     },
     image: 'elk-to-kings-mountain.jpg',
-    description: 'This demanding loop will take you to the summit of Elk and King\'s Mountains through the lush and slippery Tillamook forest. You\'ll gain nearly 4000 feet in the first two miles. How do you prepare?',
-    choices: [{
+    description: 'This demanding loop will take you to the summit of Elk and King\'s Mountains through the lush and slippery Tillamook forest. You\'ll gain nearly 4000 feet in the first two miles.', 
+    question: 'How do you prepare?',
+    options: [{
         id: 'extra-preparation',
         option: 'Practice hikes',
         outcome: 'Because you built up your strength and endurance in advance, you are able to take this challening hike in stride. The pain is still very real, but you are able to enjoy the beautiful views. You get 50 strength points and lose only 20 energy.',

@@ -33,9 +33,8 @@ function renderTrailLink() {
             trailLink.style.textDecoration = 'line-through';
         } else {
             // add href using query params
-            const searchParams = new URLSearchParams();
-            searchParams.set('id', trail.id);
-            trailLink.href = 'trail?' + searchParams.toString();
+            trailLink.href = '../trail/?id=' + trail.id;
+
 
             // set location of link to location in object
             trailLink.style.top = trail.map.top;

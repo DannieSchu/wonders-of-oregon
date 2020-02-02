@@ -3,11 +3,11 @@
 }
 
 body {
-    background-image: url('../assets/background.jpg');
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    background-color: rgb(245, 220, 200);
 }
 
 header {
