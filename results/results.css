@@ -1,0 +1,13 @@
+body.results {
+    background: url(../assets/AdobeStockPreview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}

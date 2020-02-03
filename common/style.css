@@ -24,6 +24,10 @@ h2 {
 
 }
 
+a {
+    color: rgb(165, 42, 42);
+}
+
 h1 {
     text-align: center;
     font-size: 60px;
@@ -59,4 +63,10 @@ button {
 
 button:hover {
     opacity: 0.5;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

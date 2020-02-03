@@ -1,4 +1,49 @@
-.trail body {
-    background-color: blue;
+main {
+    background-color: rgba(97, 158, 148, .7);
+    margin: 75px 120px;
+    padding: 30px 60px;
 }
 
+#trail-quiz {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-section {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#options > label {
+    padding: 2px;
+}
+
+label > input {
+    margin-left: 10px;
+}
+
+#trail-image {
+    width: 66%;
+    height: auto;
+    margin-right: 50px;
+}
+
+#result-section {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}

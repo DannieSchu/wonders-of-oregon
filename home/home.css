@@ -10,8 +10,11 @@ form {
     padding: 50px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    align-items: space-around;
+}
+
+fieldset {
+    margin: 20px auto;
 }
 
 input[type="radio"] {

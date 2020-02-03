@@ -70,9 +70,11 @@ trailQuizForm.addEventListener('submit', e => {
     // update DOM with results
     // trailQuizForm.classList.add('hidden');
     trailQuizForm.style.display = 'none';
-    resultSection.classList.remove('hidden');
-    returnButton.classList.remove('hidden');
-
+    // returnButton.classList.remove('hidden');
+    // returnButton.style.display = 'block';
+    // resultSection.classList.remove('hidden');
+    resultSection.style.display = 'flex';
+    
     // render result information to dom
     choiceText.textContent = userChoice.option;
     outcomeText.textContent = userChoice.outcome;
@@ -83,7 +85,6 @@ trailQuizForm.addEventListener('submit', e => {
     });
 
     loadProfile();
-
 }
 );
 

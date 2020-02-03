@@ -25,36 +25,32 @@
             </div>
         </div>
     </header>
-    <form id="trail-quiz">
-        <div id="trail-overview">
+    <main>
+        <form id="trail-quiz">
             <h2 id="trail-name"></h2>
-            <img id="trail-image" src="">
-            <p id="trail-description"></p>
-            <h3 id="quiz-question"></h3>
-        </div>
-        <div id="option-form" class="">
-            <div id="options">
-                <!-- <label>
-                    <input type="radio" name="" value="">
-                    <span id="option-one"></span>
-                </label>
-                <label>
-                    <input type="radio" name="" value="">
-                    <span id="option-two"></span>
-                </label>
-                <label>
-                    <input type="radio" name="" value="">
-                    <span id="option-three"></span>
-                </label> -->
+            <section class="description-section">
+                <img id="trail-image" src="">
+                <div class="column">
+                    <p id="trail-description"></p>
+                    <div id="option-form" class="">
+                        <h3 id="quiz-question"></h3>
+                        <div id="options">
+                        </div>
+                    </div>
+                    <div class="button-div">
+                        <button id="quiz-button">Submit</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+        <section id="result-section" class="hidden">
+            <h3 id="user-choice"></h3>
+            <p id="outcome"></p>
+            <div class="button-div">
+                <button id="return-button">Return to Map</button>
             </div>
-        </div>
-        <button id="quiz-button">Submit</button>
-    </form>
-    <section id="result-section" class="hidden">
-        <h3 id="user-choice"></h3>
-        <p id="outcome"></p>
-        <button id="return-button" class="hidden">Return</button>
-    </section>
+        </section>
+    </main>
     <script type="module" src="./app.js"></script>
 </body>
 
